@@ -1,3 +1,8 @@
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS properties CASCADE;
+DROP TABLE IF EXISTS reservations CASCADE;
+DROP TABLE IF EXISTS property_reviews CASCADE;
+
 create table users (
   id serial primary key not null,
   name varchar(255) not null,
